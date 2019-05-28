@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Poppins" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/container.css">
+	<link rel="stylesheet" href="./css/header.css">
+	
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+	<script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+	<script>
+		$(function(){	
+			$(window).resize(function(){
+				var winW = $(window).width();
+				var body = $('body');
+				body.removeClass('pc_ver t_ver m_ver');
+
+				if( winW > 1280 ){
+					body.addClass('pc_ver');
+				}else if(winW > 760){
+
+					body.addClass('t_ver');
+				}else{
+					body.addClass('m_ver');
+				}
+			}).resize();
+		})
+	</script>
+
+
+	<style>
+	html{
+		max-width: 1920px;
+	}
+	</style>
+</head>
+<body>
+    <div id="header">
+		<nav>
+			<div class="hamberg">
+				<div class="ham ham_top"></div>
+				<div class="ham ham_middle"></div>
+				<div class="ham ham_bottom"></div>
+			</div>
+			<a class="log" href="#">로고</a>
+			<ul class="left_nav">
+				<li>
+					<a href="" class="left_title">회사소개</a>
+					<ul class="left_sub  sub1">
+						<li>
+							<a href="">회사개요</a>
+						</li>
+						<li>
+							<a href="">걸어온길</a>
+						</li>
+						<li>
+							<a href="">중앙연구소</a>
+						</li>
+						<li>
+							<a href="">지속가능경영</a>
+						</li>
+					</ul>			
+				</li>
+				<li>
+					<a href=""  class="left_title">사업영역</a>
+				    <ul class="left_sub sub2">
+						<li>
+							<a href="">전체사업분야</a>
+						</li>
+						<li>
+							<a href="">PO</a>
+						</li>
+						<li>
+							<a href="">PVC</a>
+						</li>
+						<li>
+							<a href="">CA</a>
+						</li>
+						<li>
+							<a href="">폴리실리콘</a>
+						</li>
+						<li>
+							<a href="">TDI ASR</a>
+						</li>
+					</ul>		
+				</li>
+				<li>
+					<a href=""  class="left_title">투자정보</a>
+					<ul class="left_sub sub3">
+						<li>
+							<a href="">실적발표</a>
+						</li>
+						<li>
+							<a href="">IR일정</a>
+						</li>
+						<li>
+							<a href="">재무정보</a>
+						</li>
+						<li>
+							<a href="">주식정보</a>
+						</li>
+						<li>
+							<a href="">공시자료</a>
+						</li>
+						<li>
+							<a href="">기업지배구조</a>
+						</li>
+					</ul>			
+				</li>
+				<li>
+					<a href=""  class="left_title">인재채용</a>
+					<ul class="left_sub sub4">
+						<li>
+							<a href="">인재상 </a>
+						</li>
+						<li>
+							<a href="">직무소개</a>
+						</li>
+						<li>
+							<a href="">인사제도</a>
+						</li>
+					</ul>	
+				</li>
+			</ul><!-- -->
+		</nav><!-- nav -->
+		<div class="rightnav">
+		<ul>
+			<li class="r_nav r_nav1">
+				<span class="r_icon1"></span>
+                <a href="">알기쉬운 제품공정</a>	
+            </li>
+			<li class="r_nav r_nav2">
+				<span class="r_icon2"></span>
+                <a href="">내 삶속의 한화케미칼</a>
+            </li>
+			<li class="lang_wrap">
+				<a href="" class="lang"></a>
+				<ul class="lang_sub">
+					<li class="kor">
+						<a href="">KOR</a>
+					</li>
+					<li class="eng">
+						<a href="">ENG</a>
+					</li>
+					<li class="chn">
+						<a href="">CHN</a>
+					</li>
+				</ul>
+            </li>
+			<li class="button_wrap"> 
+				<div class="main_search_btn">
+					제품검색
+				<span class="main_search_btn2"></span>	
+				</div>
+			</li>
+		</ul>
+	    </div><!-- rightnav -->
+		<div class="allmenu">
+			<ul class="all_sub allmenu1">
+				<li class="allmenu_title all_title1">
+					<a href="">회사소개</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">회사개요</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">걸어온길</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">중앙연구소</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">지속가능경영</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">지속가능경영</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">안전보건환경경영</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">품질경영</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">나눔경영</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">상생경영</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">윤리경영</a>
+				</li>
+			</ul>
+			<ul class="all_sub allmenu2">
+				<li class="allmenu_title  all_title2">
+					<a href="">사업영역</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">전체사업분야</a>
+				</li>
+				<li class="sub_txt">
+					<a href=""style="font-weight: bold;">PO</a>
+				</li>
+				<li class="sub_txt">
+					<a href=""style="font-weight: bold;">PVC</a>
+				</li>
+				<li class="sub_txt">
+					<a href=""style="font-weight: bold;">CA</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">폴리실리콘</a>
+				</li>
+				<li class="sub_txt">
+					<a href=""style="font-weight: bold;">TDI</a>
+				</li>
+				<li class="sub_txt">
+					<a href=""style="font-weight: bold;">ASR</a>
+				</li>
+			</ul>
+			<ul class="all_sub allmenu3">
+				<li class="allmenu_title  all_title3">
+					<a href="">투자정보</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">실적발표</a>
+				</li>
+				<li class="sub_txt">
+					<a href=""><span style="font-weight: bold;">IR</span>일정</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">재무정보</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">주식정보</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">공시자료</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">기업지배구조</a>
+				</li>
+			</ul>
+			<ul class="all_sub allmenu4">
+				<li class="allmenu_title  all_title4">
+					<a href="">인재채용</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">인재상</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">직무소개</a>
+				</li>
+				<li class="sub_txt">
+					<a href="">인사제도</a>
+				</li>
+			</ul>
+			<ul class="all_sub allmenu5">
+				<li class="allmenu5-top">
+					<li class="sub_txt"><a href="">제품검색</a></li>
+					<li class="sub_txt"><a href="">알기쉬운 제품공정</a></li>
+					<li class="sub_txt"><a href="">내 삶속의 한화케미칼</a></li>
+				</li>
+				<li class="allmenu5-mid">
+					<li class="sub_txt"><a href="">고객문의</a></li>
+					<li class="sub_txt"><a href="">공지사항</a></li>
+				</li>
+				<li class="allmenu5-bot sub_txt"><a href="">개인정보처리방침</a></li>
+				<li class="allmenu5-lang">
+					<a href="">KOR</a>
+					<a href="">ENG</a>
+					<a href="">CHN</a>
+				</li>
+			</ul>
+		</div><!-- allmenu-->
+		<div class="m_allmenu">
+			<div class="m_lang">
+				<span><a href="">KOR</a></span>
+				<span><a href="">ENG</a></span>
+				<span><a href="">CHN</a></span>
+			</div>
+			<dl class="dl dl1">
+				<dt class="dt">회사소개<span class="more"></span></dt>
+				<dd class="dd">
+					<span><a href="">화사개요</a></span>
+					<span><a href="">중앙연구소</a></span>
+					<span><a href="">지속가능경영</a></span>
+					<div class="m_allmenu_sub">
+						<span><a href="">지속가능경영</a></span>
+						<span><a href="">안전보건환경경영</a></span>
+						<span><a href="">품질경영</a></span>
+						<span><a href="">나눔경영</a></span>
+						<span><a href="">상생경영</a></span>
+						<span><a href="">윤리경영</a></span>
+					</div>
+				</dd>
+				<dt class="dt">사업영역<span class="more"></span></dt>
+				<dd class="dd">
+                    <span><a href="">전체사업분야</a></span>
+					<span><a href="">PO</a></span>
+					<span><a href="">PVC</a></span>
+					<span><a href="">CA</a></span>
+					<span><a href="">폴리실리콘</a></span>
+					<span><a href="">TDI</a></span>
+					<span><a href="">ASR</a></span>
+				</dd>
+				<dt class="dt">투자정보<span class="more"></span></dt>
+				<dd class="dd">
+					<span><a href="">실적발표</a></span>
+					<span><a href="">재무정보</a></span>
+					<div class="m_allmenu_sub">
+						<span><a href="">연결 재무제표</a></span>
+						<span><a href="">별도 재무제표</a></span>
+					</div>
+					<span><a href="">주식정보</a></span>
+					<span><a href="">기업지배구조</a></span>
+					<div class="m_allmenu_sub">
+						<span><a href="">주주 및 지배구조사항</a></span>
+						<span><a href="">이사회 구성</a></span>
+						<span><a href="">이사회 운영현황</a></span>
+						<span><a href="">이사회내 위원회 외</a></span>
+						<span><a href="">정관 및 기타규정</a></span>
+					</div>
+				</dd>
+				<dt class="dt">인재채용<span class="more"></span></dt>
+				<dd class="dd">
+					<span><a href="">인재상</a></span>
+					<span><a href="">직무소개</a></span>
+					<div class="m_allmenu_sub">
+						<span><a href="">경영지원</a></span>
+						<span><a href="">영업/마케팅</a></span>
+						<span><a href="">기술/엔지니어</a></span>
+						<span><a href="">R&D</a></span>
+					</div>
+					<span><a href="">인사제도</a></span>
+				</dd>
+				<dt class="dt">고객문의</dt>
+				<dt class="dt">공지사항<span class="more"></span></dt>
+				<dd class="dd">
+					<span><a href="">뉴스</a></span>
+					<span><a href="">공지사항</a></span>
+				</dd>
+			</dl>
+			<div class="blank"></div>
+			<div class="m_allmenu_util">
+				<span><a href="">알기쉬운 제품공정</a></span>
+				<span><a href="">내 삶속의 한화케미칼</a></span>
+			</div>	
+		</div>
+	    <div class="dim"></div>
+		<div class="search_menu">
+		<div class="s_menu on">
+			<div class="s_menu_title title_click">
+				<span>STEP1</span>
+				<span>사업분야</span>
+			</div>
+			<div class="s_menu_sub">제품을 선택하여 검사해보세요</div>
+			<ul class="s_menu_list">
+				<li class="s_menu_click"><a>PO</a></li>
+				<li><a>PVC</a></li>
+				<li><a>CA</a></li>
+				<li><a>TDI</a></li>
+				<li><a>ASR</a></li>
+			</ul>
+		</div>
+		<div class="s_menu">
+				<div class="search_menu2">
+					<div class="s_menu_title">
+						<span>STEP2 . </span>
+						<span>제품명</span>
+					</div>
+					<div class="chkbox">
+					</div>
+					<div class="s_menu_sub2">
+						<strong style="color:#f37321; font-weight:bold;">제품명</strong>을 선택하세요.
+					</div>
+					<div class="s_menu_sub2">
+						<span>단계별 선택하지 않아도 검색 가능합니다.</span>
+					</div>
+				</div>
+				<!-- 클릭했을 때 -->
+				<div class="smenu2_click smenu2_click1">
+					<div class="s_menu_title title_click">
+						<span>STEP2</span>
+						<span>제품명</span>
+					</div>
+					<div class="s_menu_sub">
+						<span>단계별 선택하지 않아도 검색 가능합니다.</span>
+					</div>
+					<ul class="s_menu_list">
+						<li class="s_menu_click click2" id="click2"><a href="">LDPE</a></li>
+						<li><a href="">EVA</a></li>
+						<li><a href="">LLDPE</a></li>
+						<li><a href="">HDPE</a></li>
+						<li><a href="">진선수지(W&C)</a></li>
+					</ul>
+				</div><!-- 클릭했을 때 -->
+				<div class="smenu2_click smenu2_click2">
+					<div class="s_menu_title title_click">
+						<span>STEP2</span>
+						<span>제품명</span>
+					</div>
+					<div class="s_menu_sub">
+						<span2>단계별 선택하지 않아도 검색 가능합니다.</span>
+					</div>
+					<ul class="s_menu_list">
+						<li class="s_menu_click click2" id="click2" style="overflow-y:scroll;overflow-x:hidden; " ><a href="">LDPE</a></li>
+						<li><a href="">PVC Resin</a></li>
+						<li><a href="">CPVC</a></li>
+						<li><a href="">PSR</a></li>
+						<li><a href="">가소재</a></li>
+						<li><a href="">OA</a></li>
+						<li><a href="">PA/MA</a></li>
+					</ul>
+				</div><!-- 클릭했을 때 -->
+				<div class="smenu2_click smenu2_click3">
+					<div class="s_menu_title title_click">
+						<span>STEP2</span>
+						<span>제품명</span>
+					</div>
+					<div class="s_menu_sub">
+						<span>단계별 선택하지 않아도 검색 가능합니다.</span>
+					</div>
+					<ul class="s_menu_list">
+						<li class="s_menu_click click2" id="click2" ><a href="">LDPE</a></li>
+						<li><a href="">염소</a></li>
+						<li><a href="">EDC</a></li>
+						<li><a href="">VCM</a></li>
+						<li><a href="">ECH</a></li>
+						<li><a href="">염산</a></li>
+						<li><a href="">HYPO</a></li>
+					</ul>
+				</div><!-- 클릭했을 때 -->
+				<div class="smenu2_click smenu2_click4">
+					<div class="s_menu_title title_click">
+						<span>STEP2</span>
+						<span>제품명</span>
+					</div>
+					<div class="s_menu_sub">
+						<span>단계별 선택하지 않아도 검색 가능합니다.</span>
+					</div>
+					<ul class="s_menu_list">
+						<li class="s_menu_click click2" id="click2"><a href="">LDPE</a></li>
+						<li><a href="">TDIs</a></li>
+						<li><a href="">TDI 유도체</a></li>
+						<li><a href="">TM</a></li>
+						<li><a href="">TDAs</a></li>
+					</ul>
+				</div><!-- 클릭했을 때 -->
+				<div class="smenu2_click smenu2_click5">
+					<div class="s_menu_title title_click">
+						<span>STEP2</span>
+						<span>제품명</span>
+					</div>
+					<div class="s_menu_sub">
+						<span>단계별 선택하지 않아도 검색 가능합니다.</span>
+					</div>
+					<ul class="s_menu_list">
+						<li class="s_menu_click click2" id="click2"><a href="">LDPE</a></li>
+						<li><a href="">Soluryl Resins</a></li>
+						<li><a href="">Soluryl Additives</a></li>
+						<li><a href="">Soluryl Solutions</a></li>
+						<li><a href="">Soluryl Emulsions</a></li>
+						<li><a href="">우드코팅</a></li>
+					</ul>
+				</div><!-- 클릭했을 때 -->
+				
+       </div>
+	   <div class="s_menu">
+				<div class="search_menu3">
+					<div class="s_menu_title">
+						<span>STEP3 . </span>
+						<span>제품용도</span>
+					</div>
+					<div class="chkbox">
+						<img src="" alt="">
+					</div>
+					<div class="s_menu_sub2">
+						<strong style="color:#f37321; font-weight:bold;">제품용도</strong>를 선택하세요.
+					</div>
+					<div class="s_menu_sub2">
+						<span>단계별 선택하지 않아도 검색 가능합니다.</span>
+					</div>
+				</div>
+				<!-- 클릭했을 때 -->
+				<div class="smenu3_click smenu3_click1">
+					<div class="s_menu_title">
+						<span>STEP3</span>
+						<span>제품용도</span>
+					</div>
+					<div class="s_menu_sub ">
+						<span>단계별 선택하지 않아도 검색 가능합니다.</span>
+					</div>
+					<ul class="s_menu_list">
+						<li><a href="">사출성형</a></li>
+						<li><a href="">코팅</a></li>
+						<li><a href="">필름 발포 중공성형</a></li>
+					</ul>
+				</div><!-- 클릭했을 때 -->
+
+				<div class="smenu3_click smenu3_click2">
+					<div class="s_menu_title">
+						<span>STEP3</span>
+						<span>제품용도</span>
+					</div>
+					<div class="s_menu_sub ">
+						<span>단계별 선택하지 않아도 검색 가능합니다.</span>
+					</div>
+					<ul class="s_menu_list">
+						<li><a href="">압출코팅</a></li>
+						<li><a href="">발포</a></li>
+						<li><a href="">핫멜트</a></li>
+						<li><a href="">전선</a></li>
+						<li><a href="">필름</a></li>
+					</ul>
+				</div><!-- 클릭했을 때 -->
+
+				<div class="smenu3_click smenu3_click3">
+					<div class="s_menu_title">
+						<span>STEP3</span>
+						<span>제품용도</span>
+					</div>
+					<div class="s_menu_sub ">
+						<span>단계별 선택하지 않아도 검색 가능합니다.</span>
+					</div>
+					<ul class="s_menu_list">
+						<li><a href="">필름</a></li>
+						<li><a href="">필름(Metallocene LLD)</a></li>
+						<li><a href="">사출성형</a></li>
+						<li><a href="">압출피복</a></li>
+					</ul>
+				</div><!-- 클릭했을 때 -->
+
+				<div class="smenu3_click smenu3_click4">
+					<div class="s_menu_title">
+						<span>STEP3</span>
+						<span>제품용도</span>
+					</div>
+					<div class="s_menu_sub ">
+						<span>단계별 선택하지 않아도 검색 가능합니다.</span>
+					</div>
+					<ul class="s_menu_list">
+						<li><a href="">실란수가교</a></li>
+						<li><a href="">Yarn</a></li>
+						<li><a href="">사출</a></li>
+						<li><a href="">Cap</a></li>
+					</ul>
+				</div><!-- 클릭했을 때 -->
+
+				<div class="smenu3_click smenu3_click5">
+					<div class="s_menu_title">
+						<span>STEP3</span>
+						<span>제품용도</span>
+					</div>
+					<div class="s_menu_sub ">
+						<span>단계별 선택하지 않아도 검색 가능합니다.</span>
+					</div>
+					<ul class="s_menu_list">
+						<li><a href="">저압 케이블 절연</a></li>
+						<li><a href="">고압 케이블 절연</a></li>
+						<li><a href="">옥외배전 케이블 절연</a></li>
+						<li><a href="">반도전</a></li>
+						<li><a href="">피복</a></li>
+						<li><a href="">통신케이블</a></li>
+						<li><a href="">전자선기기</a></li>
+					</ul>
+				</div><!-- 클릭했을 때 -->
+		</div>
+		<div class="search_bot">
+			<div class="sbot_btn btn_reset">
+				<span>초기화</span>
+			</div>
+			<input type="text" placeholder="찾으시는 제품명, 제품번호, 용도를 직접 입력해주세요.(예: PO3515, 수축필름)">
+			<div class="sbot_btn btn_search">
+				<span>검색</span>
+			</div>	
+		</div>
+		</div><!-- search_menu -->
+    </div>  <!-- head -->
+    <div id="container">  
+	    <section id="main_con" >	
+		    <div  class="main_slide">
+			    <div class="img1 main_bg">
+					<!-- <img src="./img/main_visual_01.jpg" alt="mainbg1"> -->
+					<div class="img"></div>
+					<div class="text_box tbox1">
+						<h3>Be Creative & Competitive to take</h3>
+						<h3>Chemical Leadership</h3>
+						<p>창의적이고 경쟁력있는 선도 화학기업</p>
+						<a href="" class="btn">VIEW MORE</a>	
+					</div>
+				</div>
+				<div class="img2 main_bg">
+					<!-- <img src="./img/main_visual_02.jpg" alt="mainbg2"> -->
+					<div class="img"></div>
+					<div class="text_box tbox2">
+						<h3>Research continuously</h3>
+						<h3>with industry insight to drive</h3>
+						<h3>the highest-quality products</h3>
+						<p>끊임없는 연구개발과 산업을 꿰뚫는 통찰력을 바탕으로 최고의 품질을 추구합니다.</p>
+						<a href="" class="btn">VIEW MORE </a>	
+					</div>
+				</div>
+				<div class="img3 main_bg">
+					<!-- <img src="./img/main_visual_03.jpg" alt="mainbg3"> -->
+					<div class="img"></div>
+					<div class="text_box tbox3">
+						<h3>Commit to developing</h3>
+						<h3>the newest technologies and</h3>
+						<h3>build a more prosperous future</h3>
+						<p>삶의 가치를 높이는 기술 개발에 전념합니다.</p>
+						<a href="" class="btn">VIEW MORE </a>	
+					</div>
+				</div>
+				<div class="img4 main_bg">
+					<!-- <img src="./img/main_visual_04.jpg" alt="mainbg4"> -->
+					<div class="img"></div>
+					<div class="text_box tbox4">
+						<h3>Promise to go further together</h3>
+						<h3>with our customers</h3>
+						<p>함게 멀리, 수십 년간 이어 온 고객과의 약속이 우리에게는 가장 중요합니다.</p>
+						<a href="" class="btn">VIEW MORE </a>	
+					</div>
+				</div>	
+				<div class="img5 main_bg">
+					<!-- <img src="./img/main_visual_05.jpg" alt="mainbg5"> -->
+					<div class="img"></div>
+					<div class="text_box tbox5">
+						<h3>Expand into new horizons</h3>
+						<p>새로운 기술과 수출 경쟁력 강화를 통하여 글로벌 화학 회사로 뻗어나갑니다.</p>
+						<a href="" class="btn">VIEW MORE </a>	
+					</div>
+				</div>		
+			</div> <!-- mainslide -->
+	        <!-- <div class="scroll_down"><a href=""><img src="./img/" alt=""></a></div> -->
+			<style>
+				.main_bg .img{width: 100%; height: 1080px; display: block; max-width:1920px;}
+				.img1 .img{background:url('./img/main_visual_01.jpg') no-repeat center top ;}
+				.img2 .img{background:url('./img/main_visual_02.jpg') no-repeat center top ;}
+				.img3 .img{background:url('./img/main_visual_03.jpg') no-repeat center top ;}
+				.img4 .img{background:url('./img/main_visual_04.jpg') no-repeat center top ;}
+				.img5 .img{background:url('./img/main_visual_05.jpg') no-repeat center top ;}
+			</style>
+	     </section>	<!-- main_con1-->
+		<article class="cont cont1">
+			<div class="cont_title">
+				<img src="./img/title_1.png" alt="">
+			</div>
+			<p class="cont_sub">대한민국 대표 석유화학 기업,한화케미칼을 소개합니다.</p>
+			<div class="cont1_sub2">
+				<span>21,100</span>
+				<span>150</span>
+				<span class="clock"></span>
+			</div>
+			<ul class="cont1_list">
+				<li class="cont1_list_1">
+					<a href="">
+						<div class="cont_img_wrap">
+							<img src="./img/about_1.jpg" alt="">
+						</div>
+						<div class="text">
+							<h5>회사소개</h5>
+							<p>삶의 가치를 높이는 기술기업, 한화케미칼</p>
+							<a href="">
+								<span class="more_btn"></span>
+								<span class="more">more</span>
+							</a>
+						</div>
+					</a>
+				</li>
+				<li class="cont1_list_2">
+					<a href="">
+						<div class="cont_img_wrap">
+							<img src="./img/about_2.jpg" alt="">
+						</div>
+						<div class="text">
+							<h5>중앙연구소</h5>
+							<p>설립 이래 한결 같은 자세로 기술 개발에 전념해 오고 있습니다.</p>
+							<a href="">
+								<span class="more_btn"></span>
+								<span class="more">more</span>
+							</a>
+						</div>
+					</a>
+				</li>
+				<li class="cont1_list_3">
+					<a href="">
+						<div class="cont_img_wrap">
+							<img src="./img/about_3.jpg" alt="">
+						</div>
+						<div class="text">
+							<h5>투자정보</h5>
+							<p>한화케미칼의 주요 경영사항을 제공합니다.</p>
+							<a href="">
+								<span class="more_btn"></span>
+								<span class="more">more</span>
+							</a>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</article>
+		<article class="cont cont2"> 
+			<div class="cont_title">
+				<img src="./img/title_2.png" alt="">
+			</div>
+			<p class="cont_sub">끊임없는 기술 혁신으로 미래 성장 동력을 지속 발굴합니다</p>	
+			<div class="m_ver cont2_slide_wrap ">
+				<div class="m_cont2_slide_wrap">
+					<div class="m_slide m_slide1">
+						<div class="img"></div>
+						<div class="text">
+							<h3 >CPVC</h3>
+							<p>
+								한화케미칼은 국내에서<br>처음으로 자체 기술로 CPVC를<br> 생산하는데 성공하고<br> 2017년 울산 2공장에 연산 3만톤<br> 규모의<br>공장을 건설해 생산 중입니다.
+							</p>
+						</div>
+					</div>
+					<div class="m_slide m_slide2">
+						<div class="img"></div>
+						<div class="text">
+							<h3 >Eco-DEHCH</h3>
+							<p>
+								Eco-DEHCH는 유해성분인<br> 프탈레이트가 없는 <br>프리미엄 친환경 가소제로, <br>한화케미칼에서 8년간의 연구 끝에<br> 독자 개발에 성공했습니다.
+							</p>
+						</div>
+					</div>
+					<div class="m_slide m_slide3">
+						<div class="img"></div>
+						<div class="text">
+							<h3 >수첨수지</h3>
+							<p>
+								한화케미칼은 다양한 조건에 맞춰<br> 접착성을 조절할 수 있는 응용 기술을<br> 확보하여 여수 국가산업단지 내에<br> 연산 5만톤 규모의 공장 건설 중이며,<br> 수첨수지 시장 글로벌 1위를 목표로<br> 하고 있습니다.
+							</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<script>
+				$(function(){
+					$('.m_cont2_slide_wrap').slick({
+						dots: true,
+						infinite: false,
+						speed: 300,
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					});
+				})
+			</script>
+			<div class="cont2_slide_wrap pt_ver">
+				<div class="slide_sec">
+					<div class="slide slider_active" id="slide1"></div>
+					<div class="slide" id="slide2"></div>
+					<div class="slide" id="slide3"></div>
+				</div><!-- "slide_sec -->	
+				<div class="cont2_slide_txt_wrap">
+					<div class="cont2_slide_txt slide_txt1">
+						<div class="top">
+							<div class="top_title_wrap">
+								<div class="top_title top_title1">
+									<span>01</span>
+									<span>Chlorinated Polyvinyl Chloride</span>
+								</div>
+								<div class="top_title top_title2">
+									<span>02</span>
+								<span> Eco-DEHCH</span>
+								</div>
+								<div class="top_title top_title3">
+									<span>03</span>
+									<span>수첨수지</span>
+								</div>
+							</div>
+						</div>
+						<div class="bot">
+							<div class="bot_title_wrap">
+								<span class="bot_title bot_title1">CPVC</span>
+								<span class="bot_title bot_title2">Eco-DEHCH</span>
+								<span class="bot_title bot_title2">수첨수지</span>
+							</div>
+							<div class="bot_txt_wrap">
+								<span class="bot_txt bot_txt1">
+									한화케미칼은 국내에서 처음으로 자체 기술로 CPVC를 생산하는데 성공하고 2017년 울산 2공장에 연산 3만톤 규모의 공장을 건설해 생산 중입니다.
+								</span>
+								<span class="bot_txt bot_txt2">
+									Eco-DEHCH는 유해성분인 프탈레이트가 없는 프리미엄 친환경 가소제로, 한화케미칼에서 8년간의 연구 끝에 독자 개발에 성공했습니다.
+								</span>
+								<span class="bot_txt bot_txt3">
+									한화케미칼은 다양한 조건에 맞춰 접착성을 조절할 수 있는 응용 기술을 확보하여 여수 국가산업단지 내에 연산 5만톤 규모의 공장 건설 중이며, 수첨수지 시장 글로벌 1위를 목표로 하고 있습니다.
+								</span>
+							</div>
+							<div class="slide_btn_more">
+								<a href="" class="content2_more_btn more_btn1">
+									<span>제품상세보기</span>
+								</a>
+								<a href="" class="content2_more_btn more_btn2">
+									<span>제품상세보기</span>
+								</a>
+								<a href="" class="content2_more_btn more_btn3">
+									<span>제품상세보기</span>
+								</a>
+							</div>
+							<div class="cont2_slide_btn">
+								<span class="slide_btn" id="btnleft"></span>
+								<span class="slide_btn" id="btnright"></span>
+							</div>
+						</div>	
+					</div>	
+				</div>  <!-- cont2_slide_txt_wrap -->		
+			</div>	 <!-- cont2_slide_wrap -->	
+		</article>
+		<article class="cont cont3">
+           <div class="cont3_wrap">
+			<div class="cont_title" style="margin-top: 0;">
+				<img src="./img/title_3.png" alt="">
+			</div>
+			<p class="cont_sub">한화와 함꼐 꿈을 키워 갈 인재를 기다립니다.</p>
+			<ul class="cont3_arcodion">
+				<li class="arcodion arcodion1">
+					<a href="" class="arcodion_title">
+						<span class="arcodion_title_icon icon1"></span>
+						직무 특성 및 소개
+						<span class="arcodion_title_arrow" id="arrow1">
+						</span>
+					</a>
+					<div class="arcodiontxt">
+						<p>한국 케미칼 산업의 역사를 이끌어 온 한화케미칼이 미래를 선도하는 글로벌 케미칼리더로 함께 성장해 나갈 인재를 모집합니다.
+						<br>	
+						글로벌 시장 진출 및 사업다각화가 본격화됨에 따라 체계적 · 전문적인 인재 육성의 중요성을 인식하고, 그에 걸맞은 다양한 교육프로그램과 인사제도를 폭넓게 실시하고 있습니다.
+						<br>
+						경영지원, 영업/마케팅, 기술/엔지니어, R&D 분야의 직무별 특성에 맞는 인재를 채용합니다.</p>
+						<a href="" class="arcodion_more"><span><strong>more</strong></span></a>
+					</div>
+				</li>
+				<li class="arcodion arcodion2">	
+					<a href="" class="arcodion_title">
+						<span class="arcodion_title_icon icon2"></span>
+						인재상
+						<span class="arcodion_title_arrow" id="arrow2"></span>
+					</a>
+					<div class="arcodiontxt">
+						<p>한화는 신용과 의리에 기반하여 ‘도전, 헌신, 정도’를 3대 핵심가치로 삼는 인재상을 추구하고 있습니다.</p>
+						<ul class="arcodion2_list">
+							<li>
+								<span class="arcodion2_list_title">
+									<strong>Challenge</strong>
+								</span>
+								<span class="arcodion2_list_txt">기존의 틀에 안주하지 않고 변화와 혁신을 통해 최고를 추구하는<strong>도전적인 한화인</strong> </span>
+							</li>
+							<li>
+								<span class="arcodion2_list_title">
+									<strong>Dedication</strong>
+								</span>
+								<span  class="arcodion2_list_txt">회사, 고객, 동료와의 인연을 소중히 여기고 큰 목표를 위해 혼신의 힘을 다하는<strong>헌신적인 한화인</strong> </span>
+							</li>
+							<li>
+								<span class="arcodion2_list_title">
+									<strong>Integrity</strong>
+								</span>
+								<span class="arcodion2_list_txt">자긍심을 바탕으로 원칙에 따라 바르고 공정하게 행동하는 <strong>헌신적인 한화인</strong> </span>
+							</li>
+						</ul>
+						<a href="" class="arcodion_more"><span><strong>more</strong></span></a>
+					</div>
+				</li>
+			</ul>
+		   </div>
+		</article>
+		<article class="cont cont4">
+			<div class="cont_title">
+				<img src="./img/title_4.png" alt="">
+			</div>
+			<p class="cont_sub">한화와 함꼐 꿈을 키워 갈 인재를 기다립니다.</p>
+			<ul class="sns">
+				<li class="sns_btn">
+					<a href="" class="blog"></a>
+				</li>
+				<li class="dot2"></li>
+				<li class="sns_btn">
+					<a href=""class="facebook"></a>
+				</li>
+			</ul>
+			<div class="cont4_list_wrap">
+				<ul class="cont4_list cont4_list_blog">
+						<li class="list_wrap">
+							<a class="list_img">
+								<span class="blog_dim">
+								     <span class="blog_dim_icon"></span>
+								</span>
+								<span class="img blogimg1"></span>
+								<span class="blog_icon">
+									<a href=""></a>
+								</span>
+							</a>
+							<div class="list_text_wrap">
+								<ul>
+									<li class="blog_title">뉴스</li>
+									<li class="txt">한화케미칼의 <strong style="font-weight:bold;">New</strong>사회공헌,몸도 마음도 "언제나 맑음</li>
+									<li class="time">
+										<span></span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="list_wrap">
+							<a class="list_img">
+								<span class="blog_dim">
+									<span class="blog_dim_icon"></span>
+								</span>
+								<span class="img blogimg2"></span>
+								<span class="blog_icon">
+									<a href=""></a>
+								</span>
+							</a>
+							<div class="list_text_wrap">
+								<ul>
+									<li class="blog_title">화학 캐스트</li>
+									<li class="txt">화재에 강하다! 소방용 합성수지 <strong style="font-weight:bold;">‘CPVC’</strong>란?</li>
+									<li class="time">
+										<span></span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="list_wrap">
+							<a class="list_img">
+								<span class="blog_dim">
+									<span class="blog_dim_icon"></span>
+								</span>
+								<span class="img blogimg3"></span>
+								<span class="blog_icon">
+									<a href=""></a>
+								</span>
+							</a>
+							<div class="list_text_wrap">
+								<ul>
+									<li class="blog_title">화학 캐스트</li>
+									<li class="txt">자동차에 색을 입히는 기술, 아크릴 수지 도료</li>
+									<li class="time">
+										<span></span>
+									</li>
+								</ul>
+							</div>
+						</li>
+				</ul>
+				<ul class="cont4_list cont4_list_facebook">
+					<li class="list_wrap">
+						<a class="list_img">>
+							<span class="facebook_dim">
+								<span class="facebook_dim_icon"></span>
+							</span>
+							<span class="img facebookimg1"></span>
+							<span class="facebook_icon">
+								<a href=""></a>
+							</span>
+						</a>
+						<div class="list_text_wrap">
+							<ul>
+								<li class="blog_title facebook_none">뉴스</li>
+								<li class="txt">자동차에 색을 입히는데도 화학기술이 필요하다</li>
+								<li class="time">
+									<span></span>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="list_wrap">
+						<a class="list_img">
+							<span class="facebook_dim">
+								<span class="facebook_dim_icon"></span>
+							</span>
+							<span class="img facebookimg2"></span>
+							<span class="facebook_icon">
+								<a href=""></a>
+							</span>
+						</a>
+						<div class="list_text_wrap">
+							<ul>
+								<li class="blog_title facebook_none">뉴스</li>
+								<li class="txt">치매에 대해 미리 알아보고 예방하는 한화케미칼의..</li>
+								<li class="time">
+									<span></span>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="list_wrap">
+						<a class="list_img">
+							<span class="facebook_dim">
+								<span class="facebook_dim_icon"></span>
+							</span>
+							<span class="img facebookimg3"></span>
+							<span class="facebook_icon">
+								<a href=""></a>
+							</span>
+						</a>
+						<div class="list_text_wrap">
+							<ul>
+								<li class="blog_title facebook_none">뉴스</li>
+								<li class="txt">★한화케미칼 광고영상 공모전★ 총 상금 1200만원...</li>
+								<li class="time">
+									<span></span>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>	
+		</article>
+    </div> <!-- container -->		
+	<div id="footer">
+		<div class="top_btn">
+			<a href="#main_con"></a>
+		</div>
+		<div class="foot_logo">
+			<a href=""></a>
+		</div>
+		<address>
+			<img class="address" src="./img/address.png" alt="">
+			<img class="copyright" src="./img/copyright.png" alt="">
+		</address>
+		<div class="footer_right">
+			<div class="links">
+				<a href="">
+					<span>온라인구매 시스템</span>
+				</a>
+				<a href="" class="dot">
+					<span>고객문의</span>
+				</a>
+				<span class="mVer"></span>
+				<a href="" class="dot">
+					<span>공지사항</span>
+				</a>
+				<a href="" class="dot">
+					<span style="color:#f37321;">개인정보처리방침</span>
+				</a>
+			</div>
+			<div class="family_site">
+				<span></span>
+			</div>
+		</div>	
+	</div>
+<script>
+	
+	$(document).ready(function(){
+		// slickslide 에 active가 붙으면 현재 페이지 이고 inex();로 움직인다.
+		$('.main_slide').slick({
+			dots: true,
+			infinite: true,
+			arrow:false,
+			autoplay: true,
+			pauseOnHover:false,
+			autoplaySpeed: 3000,
+			cssEase: 'ease-in-out',
+			slidesToShow: 1,
+			dotsClass: 'btn_txt',
+			customPaging : function(slider, i) {
+				if(i == 0){ 
+					return `<span class="num">01</span><span class="txt">CREATIVE</span><span class="time"></span><span class='bg'></span>	`
+				}else if(i == 1){
+						return `<span class="num">02</span><span class="txt">INNOVATION</span><span class="time"></span><span class='bg'></span>`
+				}else if(i == 2){
+						return `<span class="num">03</span><span class="txt">CHEMICAL</span><span class="time"></span><span class='bg'></span>`
+				}else if(i == 3){
+						return `<span class="num">04</span><span class="txt">CUSTOMERS</span><span class="time"></span><span class='bg'></span>`
+				}else if(i == 4){
+					return `<span class="num">05</span><span class="txt">GLOBAL</span><span class="time"></span><span class='bg'></span>`
+				} 
+		   }
+		});
+
+		$('.btn_txt').addClass('active');
+		$('.tbox1').addClass('on');
+
+
+		$('.main_slide').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+			   
+        });
+
+	
+		$('.main_slide').on('afterChange', function(event, slick, currentSlide, nextSlide){
+			$('.text_box').removeClass('on');
+			$('.main_slide .tbox'+ (currentSlide+1)).addClass('on');
+        });
+		
+	});
+ 
+</script>
+<script src="./js/header.js"></script>
+<script src="./js/cont1scroll.js"></script>
+<script src="./js/slide.js"></script>
+<script src="./js/arcodion.js"></script>
+<script src="./js/tab.js"></script>
+<script src="./js/date.js"></script>
+</body>
+</html>
